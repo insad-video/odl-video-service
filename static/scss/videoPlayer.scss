@@ -86,6 +86,9 @@
   display: block;
 }
 
+.video-js.vjs-controls-enabled.vjs-youtube .vjs-control-bar {
+  visibility: hidden;
+}
 
 .video-js.vjs-controls-enabled .vjs-big-play-button {
   top: 50%;

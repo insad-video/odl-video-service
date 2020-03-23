@@ -30,7 +30,7 @@ const makeConfigForVideo = (
   embedded: ?boolean
 ): Object => ({
   autoplay:    false,
-  controls:    !useYouTube,
+  controls:    true,
   fluid:       embedded || false,
   playsinline: true,
   techOrder:   useYouTube ? ["youtube", "html5"] : ["html5"],
