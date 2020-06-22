@@ -4,7 +4,6 @@ celery==4.3.0
 celery-redbeat==0.13.0
 cryptography
 dj-database-url==0.3.0
-dj-static==0.0.6
 django-redis==4.7.0
 djangorestframework==3.11.0
 django-server-status==0.6.0
@@ -19,7 +18,7 @@ pycountry
 python-dateutil==2.8.1
 pytz
 redis==3.2.1
-requests>=2.20.0
+requests>=2.24.0
 sentry-sdk==0.14.3
 structlog==20.1.0
 structlog-sentry==1.2.2
@@ -46,13 +45,3 @@ git+https://github.com/mitodl/mit-moira.git#egg=mit-moira==0.0.4
 
 # Django-Elastic-Transcoder
 git+https://github.com/mitodl/django-elastic-transcoder.git#egg=django-elastic-transcoder==0.9.7
-
-# TechTV Migration
-mysqlclient
-dropbox==9.0.0
-Jinja2==2.11.1
-markupsafe==1.1.1
-psutil==5.6.6
-bonobo==0.6.4
-git+https://github.com/mitodl/pycaption.git#egg=pycaption
-smart_open==1.5.7

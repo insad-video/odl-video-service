@@ -32,7 +32,6 @@ from rest_framework.views import APIView
 
 from cloudsync import api as cloudapi
 from cloudsync.tasks import upload_youtube_caption
-from techtv2ovs.models import TechTVVideo
 from ui.constants import EDX_ADMIN_GROUP
 from ui.pagination import CollectionSetPagination, VideoSetPagination
 from ui.serializers import VideoSerializer

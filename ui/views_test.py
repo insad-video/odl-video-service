@@ -14,7 +14,6 @@ from django.test import RequestFactory
 from rest_framework import status
 from rest_framework.reverse import reverse
 
-from techtv2ovs.factories import TechTVVideoFactory
 from ui import factories
 from ui.constants import YouTubeStatus
 from ui.encodings import EncodingNames
