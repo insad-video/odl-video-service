@@ -63,7 +63,7 @@ jobs:
           ODL_VIDEO_SECURE_SSL_REDIRECT: 'False'
           ODL_VIDEO_DB_DISABLE_SSL: 'True'
           CELERY_TASK_ALWAYS_EAGER: 'True'
-          REDIS_URL: redis://redis:6379/0
+          REDIS_URL: redis://redis:6379/4
           XDG_CACHE_HOME: /src/.cache
           SECRET_KEY: actions_secret         
 
