@@ -1,4 +1,4 @@
-name: CI2
+name: CI
 on: [push]
 jobs:
   python-tests:
@@ -19,6 +19,7 @@ jobs:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
           POSTGRES_DB: postgres
+          POSTGRES_HOST: localhost
         ports:
           - 5432:5432
 
