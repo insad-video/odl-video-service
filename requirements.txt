@@ -4,7 +4,7 @@
 #
 #    pip-compile
 #
-amqp==2.5.2
+amqp==5.0.9
     # via kombu
 appdirs==1.4.3
     # via zeep
@@ -14,7 +14,7 @@ backcall==0.1.0
     # via ipython
 beautifulsoup4==4.9.0
     # via -r requirements.in
-billiard==3.6.3.0
+billiard==3.6.4.0
     # via celery
 boto==2.49.0
     # via smart-open
@@ -30,10 +30,12 @@ botocore==1.15.39
 bz2file==0.98
     # via smart-open
 cached-property==1.5.1
-    # via zeep
+    # via
+    #   kombu
+    #   zeep
 cachetools==4.1.0
     # via google-auth
-celery==4.3.0
+celery==5.2.2
     # via
     #   -r requirements.in
     #   celery-redbeat
@@ -47,6 +49,18 @@ cffi==1.14.0
     # via cryptography
 chardet==3.0.4
     # via requests
+click==8.0.3
+    # via
+    #   celery
+    #   click-didyoumean
+    #   click-plugins
+    #   click-repl
+click-didyoumean==0.3.0
+    # via celery
+click-plugins==1.1.1
+    # via celery
+click-repl==0.2.0
+    # via celery
 cryptography==3.4.8
     # via
     #   -r requirements.in
@@ -74,7 +88,7 @@ django-compat==1.0.15
     #   -r requirements.in
     #   django-hijack
     #   django-hijack-admin
-git+https://github.com/mitodl/django-elastic-transcoder.git#egg=django-elastic-transcoder==0.9.7
+django-elastic-transcoder @ git+https://github.com/mitodl/django-elastic-transcoder.git
     # via -r requirements.in
 django-encrypted-model-fields==0.6.0
     # via -r requirements.in
@@ -88,7 +102,7 @@ django-redis==4.7.0
     # via -r requirements.in
 django-server-status==0.7.3
     # via -r requirements.in
-git+https://github.com/Brown-University-Library/django-shibboleth-remoteuser.git#egg=django-shibboleth-remoteuser==0.9
+django-shibboleth-remoteuser @ git+https://github.com/Brown-University-Library/django-shibboleth-remoteuser.git
     # via -r requirements.in
 django-webpack-loader==0.5.0
     # via -r requirements.in
@@ -126,7 +140,9 @@ httplib2==0.19.0
 idna==2.9
     # via requests
 importlib-metadata==3.3.0
-    # via kombu
+    # via
+    #   click
+    #   kombu
 ipython==7.13.0
     # via -r requirements.in
 ipython-genutils==0.2.0
@@ -139,11 +155,11 @@ jmespath==0.9.5
     # via
     #   boto3
     #   botocore
-kombu==4.6.8
+kombu==5.2.3
     # via celery
 lxml==4.6.2
     # via zeep
-git+https://github.com/mitodl/mit-moira.git#egg=mit-moira==0.0.4
+mit-moira @ git+https://github.com/mitodl/mit-moira.git
     # via -r requirements.in
 newrelic==5.12.0.140
     # via -r requirements.in
@@ -158,7 +174,9 @@ pexpect==4.8.0
 pickleshare==0.7.5
     # via ipython
 prompt-toolkit==3.0.5
-    # via ipython
+    # via
+    #   click-repl
+    #   ipython
 protobuf==3.11.3
     # via
     #   google-api-core
@@ -227,6 +245,7 @@ sentry-sdk==0.14.3
     #   structlog-sentry
 six==1.14.0
     # via
+    #   click-repl
     #   django-compat
     #   google-api-core
     #   google-api-python-client
@@ -269,10 +288,11 @@ urllib3==1.25.8
     #   sentry-sdk
 uwsgi==2.0.18
     # via -r requirements.in
-vine==1.3.0
+vine==5.0.0
     # via
     #   amqp
     #   celery
+    #   kombu
 wcwidth==0.1.9
     # via prompt-toolkit
 webencodings==0.5.1
